@@ -2,5 +2,7 @@
   "name": "hospital-yugma-patient",
   "app_id": "",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }

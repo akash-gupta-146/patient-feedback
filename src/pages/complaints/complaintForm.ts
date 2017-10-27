@@ -9,9 +9,9 @@ import { HomePage } from '../home/home';
 })
 export class ComplaintFormPage {
   constructor(public navCtrl: NavController,
-              public navParams : NavParams,
-              public alertCtrl: AlertController
-  ) {}
+    public navParams: NavParams,
+    public alertCtrl: AlertController
+  ) { }
 
   showConfirm() {
     let confirm = this.alertCtrl.create({

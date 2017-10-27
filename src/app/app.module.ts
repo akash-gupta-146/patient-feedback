@@ -10,6 +10,10 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { ComplaintFormPage } from '../pages/complaints/complaintForm';
+import { SuggestionFormPage } from '../pages/suggestion/suggestion';
+import { SurveyPage } from '../pages/survey/survey';
+import { AppreciateFormPage } from '../pages/appreciate/appreciateForm';
 
 @NgModule({
   declarations: [
@@ -17,7 +21,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    ComplaintFormPage,
+    SuggestionFormPage,
+    SurveyPage,
+    AppreciateFormPage
   ],
   imports: [
     BrowserModule,
@@ -29,7 +37,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AboutPage,
     ContactPage,
     HomePage,
-    TabsPage
+    TabsPage,
+    ComplaintFormPage,
+    SuggestionFormPage,
+    SurveyPage,
+    AppreciateFormPage
   ],
   providers: [
     StatusBar,

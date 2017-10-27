@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon color="primary" name="menu"></ion-icon>
+    </button>
+    <ion-title>Add Compliant</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content  class="background-gray">
+  <ion-badge text-center margin>Patient Details</ion-badge>
+
+  <ion-list>
+        <ion-item>
+          <ion-icon color="primary" item-left name="finger-print"></ion-icon>
+            <ion-label stacked >Registration ID</ion-label>
+          <ion-input type="text"  placeholder="Add Registration ID"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+            <ion-icon color="primary" item-left name="person"></ion-icon>
+            <ion-label stacked>Name</ion-label>
+          <ion-input type="text"  placeholder="Add Name"></ion-input>
+        </ion-item>
+      
+        <ion-item>
+            <ion-icon color="primary" item-left name="mail"></ion-icon>
+            <ion-label stacked>Email ID</ion-label>
+            <ion-input type="email"  placeholder="Add Email ID"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-icon color="primary" item-left name="call"></ion-icon>
+            <ion-label stacked>Contact Number</ion-label>
+            <ion-input type="number"  placeholder="Add Contact Number"></ion-input>
+        </ion-item>
+
+        <ion-item>
+            <ion-icon color="primary" item-left name="home"></ion-icon>
+            <ion-label stacked>Address</ion-label>
+            <ion-input type="text"  placeholder="Add Address"></ion-input>
+        </ion-item>
+  </ion-list>
+
+<ion-badge margin text-center>Complaint Against</ion-badge>
+<ion-list>
+    <ion-item>
+        <ion-icon color="primary" item-left name="barcode"></ion-icon>
+        <ion-label stacked>Department ID</ion-label>
+      <ion-input type="text"  placeholder="Add Department ID"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+        <ion-icon color="primary" item-left name="podium"></ion-icon>
+        <ion-label stacked>Department Name</ion-label>
+      <ion-input type="text"  placeholder="Add "></ion-input>
+    </ion-item>
+  
+    <ion-item>
+        <ion-icon color="primary" item-left name="person"></ion-icon>
+        <ion-label stacked>Doctor</ion-label>
+        <ion-input type="text"  placeholder="Add Doctor"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <ion-badge margin text-center>Complaint</ion-badge>
+  <ion-list>
+      <ion-item>
+          <!-- <ion-icon color="primary" item-left name="home"></ion-icon> -->
+          <ion-label stacked>Details</ion-label>
+          <ion-input type="text"  placeholder="Add Title"></ion-input>
+      </ion-item>
+      <textarea padding row="3" class="descriptionTextarea" placeholder="Add Description" ></textarea>
+  </ion-list>
+
+  <button ion-button full (click)="showConfirm()">Submit</button>
+</ion-content>

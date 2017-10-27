@@ -1,17 +1,47 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
       Contact
     </ion-title>
   </ion-navbar>
+  <ion-searchbar color="primary"></ion-searchbar>
 </ion-header>
 
 <ion-content>
+
+    <img src="assets/img/map.jpg">
+    <div padding-left>
+      <h3>New Life Hospital</h3>
+      <span>
+        Duis suscipit, magna quis, Street 1, Duisstls<br>
+        Pin - 1100293
+      </span>
+    </div>
+  <ion-list margin-top>
+    <ion-list-header>
+      Department 1
+    </ion-list-header>
+    <ion-item *ngFor="let a of contacts">
+        <ion-icon name="call" item-start color="primary"></ion-icon>
+        {{a.name}}
+        <span item-right><b>{{a.contact}}</b></span>
+      </ion-item>
+  </ion-list>
+
   <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
+    <ion-list-header>Follow us</ion-list-header>
     <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
+      <ion-icon name="logo-facebook" color="fb" item-start></ion-icon>
+      /newlifehospital
+    </ion-item>
+    <ion-item>
+        <ion-icon name="logo-twitter" color="twitter" item-start></ion-icon>
+        @newlifehospital
+    </ion-item>
+    <ion-item>
+        <ion-icon name="globe" item-start color="web"></ion-icon>
+        www.newlifehospital.com
     </ion-item>
   </ion-list>
 </ion-content>
+

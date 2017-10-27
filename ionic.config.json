@@ -1,5 +1,6 @@
 {
   "name": "hospital-yugma-patient",
   "app_id": "",
-  "type": "ionic-angular"
+  "type": "ionic-angular",
+  "integrations": {}
 }

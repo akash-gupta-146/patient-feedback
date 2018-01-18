@@ -11,7 +11,6 @@
       <ion-col col-6 *ngFor="let set of options">
         <ion-card padding class="dashboard-card" (click)="openModule(set)">
           <img [src]="set.shape" width="100%">
-          <img [src]="set.icon" class="dashboard-icon">
           <div margin text-center class="dashboard-option-text">{{set.title}}</div>
         </ion-card>
       </ion-col>
